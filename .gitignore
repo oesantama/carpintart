@@ -1,0 +1,89 @@
+# ==============================================================================
+# CarpintArt ERP - .gitignore Profesional para Flutter & Dart
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Secretos, Credenciales y Variables de Entorno (CRÍTICO)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.jks
+*.keystore
+serviceAccountKey*.json
+google-services.json
+GoogleService-Info.plist
+
+# ------------------------------------------------------------------------------
+# 2. Flutter / Dart Caches & Dependencias
+# ------------------------------------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+doc/api/
+*.lock.bk
+
+# ------------------------------------------------------------------------------
+# 3. IDEs y Editores de Código
+# ------------------------------------------------------------------------------
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Visual Studio Code (ignorar datos locales, permitir configuraciones compartidas)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Otros editores
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# ------------------------------------------------------------------------------
+# 4. Android Específico
+# ------------------------------------------------------------------------------
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/.gradle/
+android/local.properties
+android/captures/
+android/gradlew
+android/gradlew.bat
+
+# ------------------------------------------------------------------------------
+# 5. iOS / macOS Específico
+# ------------------------------------------------------------------------------
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/ephemeral/
+ios/.symlinks/
+ios/Pods/
+ios/Podfile.lock
+macos/Flutter/Generated.xcconfig
+macos/Flutter/ephemeral/
+macos/.symlinks/
+macos/Pods/
+
+# ------------------------------------------------------------------------------
+# 6. Símbolos, Ofuscación y Logs
+# ------------------------------------------------------------------------------
+*.log
+app.*.symbols
+app.*.map.json
+migrate_working_dir/
